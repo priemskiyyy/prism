@@ -1,0 +1,56 @@
+import { For } from "solid-js";
+import type { Component } from "solid-js";
+import {
+  PLAN_LABELS,
+  REGION_LABELS,
+  ROLE_LABELS,
+} from "examples/shared/courier/constants/labels";
+import { WORKSPACES } from "examples/shared/courier/constants/workspaces";
+import { getMemberships } from "examples/shared/courier/directory/getMemberships";
+import type { Membership } from "examples/shared/courier/types/Membership";
+import type { WorkspaceId } from "examples/shared/courier/types/WorkspaceId";
+import { workspaceTabStyles } from "examples/shared/ui/styles/workspaceTabStyles";
+
+type WorkspaceTabsProps = {
+  membership: Membership;
+  onWorkspaceSelect: (workspaceId: WorkspaceId) => void;
+};
+
+export const WorkspaceTabs: Component<WorkspaceTabsProps> = (props) => (
+  <div role="group" aria-label="Workspaces" class="flex min-w-0 gap-1.5">
+    <For each={getMemberships(props.membership.userId)}>
+      {({ workspaceId, role }) => {
+        const workspace = WORKSPACES[workspaceId];
+        const selected = () => workspaceId === props.membership.workspaceId;
+
+        return (
+          <button
+            type="button"
+            aria-pressed={selected()}
+            class={workspaceTabStyles({ selected: selected() })}
+            onClick={() => props.onWorkspaceSelect(workspaceId)}
+          >
+            <span
+              aria-hidden="true"
+              class="flex size-9 shrink-0 items-center justify-center rounded-lg bg-indigo-500 text-sm font-semibold text-white dark:bg-indigo-400 dark:text-zinc-950"
+            >
+              {workspace.initials}
+            </span>
+            <span
+              class="flex min-w-0 flex-col"
+              classList={{ "max-sm:sr-only": !selected() }}
+            >
+              <span class="truncate text-sm font-semibold">
+                {workspace.name}
+              </span>
+              <span class="truncate text-xs text-zinc-500 dark:text-zinc-400">
+                {PLAN_LABELS[workspace.plan]} ·{" "}
+                {REGION_LABELS[workspace.region]} · {ROLE_LABELS[role]}
+              </span>
+            </span>
+          </button>
+        );
+      }}
+    </For>
+  </div>
+);
