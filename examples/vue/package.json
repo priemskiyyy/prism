@@ -1,0 +1,21 @@
+{
+  "name": "example-vue",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "lint:typescript": "vue-tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "@priemskiyyy/prism-devtools": "workspace:*",
+    "@priemskiyyy/prism-vue": "workspace:*",
+    "example-shared": "workspace:*",
+    "vue": "3.5.42"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
