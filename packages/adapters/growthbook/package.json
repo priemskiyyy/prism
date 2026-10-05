@@ -1,0 +1,52 @@
+{
+  "name": "@priemskiyyy/prism-growthbook",
+  "version": "0.1.0",
+  "description": "GrowthBook adapter for Prism feature flags.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priemskiyyy/prism.git",
+    "directory": "packages/adapters/growthbook"
+  },
+  "bugs": {
+    "url": "https://github.com/priemskiyyy/prism/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "feature-flags",
+    "typescript",
+    "prism"
+  ],
+  "peerDependencies": {
+    "@priemskiyyy/prism": "^0.1.0",
+    "@growthbook/growthbook": "^1.7.0"
+  },
+  "devDependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "@growthbook/growthbook": "1.7.0"
+  }
+}
