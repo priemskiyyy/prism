@@ -1,0 +1,53 @@
+{
+  "name": "@priemskiyyy/prism-launchdarkly-react-native",
+  "version": "0.1.0",
+  "description": "Experimental LaunchDarkly react-native adapter for Prism.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priemskiyyy/prism.git",
+    "directory": "packages/adapters/launchdarkly-react-native"
+  },
+  "bugs": {
+    "url": "https://github.com/priemskiyyy/prism/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "feature-flags",
+    "typescript",
+    "prism"
+  ],
+  "peerDependencies": {
+    "@priemskiyyy/prism": "^0.1.0",
+    "@launchdarkly/react-native-client-sdk": ">=10.20.2 <11"
+  },
+  "devDependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "@launchdarkly/react-native-client-sdk": "10.20.2",
+    "react-native": "0.86.3"
+  }
+}
