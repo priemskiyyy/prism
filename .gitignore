@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.expo/
+.artifacts/
+coverage/
+*.tgz
+.DS_Store
+.env
+.env.*
+!.env.example
+.pnpm-store/
+.idea/
+docs/.vitepress/cache/
