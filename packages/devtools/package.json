@@ -1,0 +1,61 @@
+{
+  "name": "@priemskiyyy/prism-devtools",
+  "version": "0.1.0",
+  "description": "A framework-independent inspector for Prism flags: values, resolutions, errors, overrides and a timeline, with a React wrapper.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priemskiyyy/prism.git",
+    "directory": "packages/devtools"
+  },
+  "bugs": {
+    "url": "https://github.com/priemskiyyy/prism/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "feature-flags",
+    "devtools",
+    "typescript",
+    "prism"
+  ],
+  "peerDependencies": {
+    "@priemskiyyy/prism": "^0.1.0",
+    "react": ">=18.2.0 <20"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@priemskiyyy/prism": "workspace:*"
+  }
+}
