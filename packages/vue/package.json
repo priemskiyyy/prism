@@ -1,0 +1,52 @@
+{
+  "name": "@priemskiyyy/prism-vue",
+  "version": "0.1.0",
+  "description": "Vue bindings for typed Prism flag values, details, and status.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priemskiyyy/prism.git",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/priemskiyyy/prism/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "feature-flags",
+    "typescript",
+    "prism"
+  ],
+  "peerDependencies": {
+    "@priemskiyyy/prism": "^0.1.0",
+    "vue": ">=3.5.0 <4"
+  },
+  "devDependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "vue": "3.5.42"
+  }
+}
