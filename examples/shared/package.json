@@ -1,0 +1,26 @@
+{
+  "name": "example-shared",
+  "private": true,
+  "type": "module",
+  "description": "The Courier domain and UI recipes the examples share: flags, workspaces, the simulated flag backend, one host per provider SDK and the Tailwind styles.",
+  "scripts": {
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@growthbook/growthbook": "1.7.0",
+    "@openfeature/core": "1.12.0",
+    "@openfeature/web-sdk": "1.10.0",
+    "@phosphor-icons/core": "2.1.1",
+    "@priemskiyyy/prism": "workspace:*",
+    "@priemskiyyy/prism-growthbook": "workspace:*",
+    "@priemskiyyy/prism-http": "workspace:*",
+    "@priemskiyyy/prism-memory": "workspace:*",
+    "@priemskiyyy/prism-openfeature-web": "workspace:*",
+    "@priemskiyyy/prism-statsig": "workspace:*",
+    "@priemskiyyy/prism-unleash": "workspace:*",
+    "@statsig/js-client": "3.33.5",
+    "class-variance-authority": "0.7.1",
+    "unleash-proxy-client": "3.8.2",
+    "zod": "4.6.5"
+  }
+}
