@@ -1,0 +1,52 @@
+{
+  "name": "@priemskiyyy/prism-statsig",
+  "version": "0.1.0",
+  "description": "statsig adapter for Prism feature flags.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priemskiyyy/prism.git",
+    "directory": "packages/adapters/statsig"
+  },
+  "bugs": {
+    "url": "https://github.com/priemskiyyy/prism/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "feature-flags",
+    "typescript",
+    "prism"
+  ],
+  "peerDependencies": {
+    "@priemskiyyy/prism": "^0.1.0",
+    "@statsig/js-client": "^3.33.5"
+  },
+  "devDependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "@statsig/js-client": "3.33.5"
+  }
+}
