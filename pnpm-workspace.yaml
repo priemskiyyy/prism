@@ -1,0 +1,14 @@
+packages:
+  - packages/*
+  - packages/adapters/*
+  - packages/integrations/*
+  - examples/shared
+  - examples/react
+  - examples/expo
+  - examples/server
+  - examples/vue
+  - examples/solid
+  - examples/svelte
+
+onlyBuiltDependencies:
+  - esbuild
