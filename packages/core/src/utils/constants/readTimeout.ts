@@ -1,0 +1,3 @@
+export const DEFAULT_READ_TIMEOUT = 10_000;
+
+export const MAXIMUM_READ_TIMEOUT = 2_147_483_647;
