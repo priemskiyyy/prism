@@ -1,0 +1,21 @@
+{
+  "name": "example-solid",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "lint:typescript": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@priemskiyyy/prism": "workspace:*",
+    "@priemskiyyy/prism-devtools": "workspace:*",
+    "@priemskiyyy/prism-solid": "workspace:*",
+    "example-shared": "workspace:*",
+    "solid-js": "1.9.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
