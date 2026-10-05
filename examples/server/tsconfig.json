@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": { "examples/shared/*": ["../shared/*"] }
+  },
+  "include": ["src/**/*.ts", "vite.config.ts"]
+}
