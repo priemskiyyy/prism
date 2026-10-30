@@ -5,7 +5,7 @@ description: "Solid primitives for Prism: PrismProvider, useFlag and useFlagDeta
 # Solid
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-solid
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-solid@next
 ```
 
 Requires Solid 1.8 or newer. Every primitive returns an `Accessor` and must run under a reactive owner, such as a component.

@@ -2,6 +2,14 @@
 
 Solid primitives for Prism.
 
+## Installation
+
+The npm preview uses the `next` dist-tag.
+
+```sh
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-solid@next
+```
+
 Register your Prism once, put it in a provider and read flags by key:
 
 ```tsx

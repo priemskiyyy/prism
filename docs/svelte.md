@@ -5,7 +5,7 @@ description: "Svelte stores for Prism: setPrism and getPrism context, flagStore 
 # Svelte
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-svelte
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-svelte@next
 ```
 
 Requires Svelte 5. The binding exposes readable stores, which work in runes mode and in legacy components.

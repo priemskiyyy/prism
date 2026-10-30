@@ -2,6 +2,14 @@
 
 A deterministic Prism adapter for examples and tests.
 
+## Installation
+
+The npm preview uses the `next` dist-tag.
+
+```sh
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-memory@next
+```
+
 ```ts
 import { z } from "zod";
 import { Prism, flag } from "@priemskiyyy/prism";

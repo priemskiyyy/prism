@@ -2,6 +2,19 @@
 
 Typed, reactive feature flags for TypeScript. Declare each flag once with a schema and a fallback, read it by key from React, Vue, Solid or Svelte, and keep the same components on your own API, OpenFeature, LaunchDarkly, GrowthBook, Unleash, Statsig, PostHog or ConfigCat.
 
+## npm preview
+
+The initial npm preview uses the `next` dist-tag:
+
+```sh
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-http@next zod
+```
+
+The preview includes the core, React, Vue, Solid and Svelte bindings, and the
+HTTP and memory adapters. The other adapters and devtools are available as
+source while release verification continues. The API may change during the
+preview.
+
 ```ts
 import { Prism, flag } from "@priemskiyyy/prism";
 import { http } from "@priemskiyyy/prism-http";

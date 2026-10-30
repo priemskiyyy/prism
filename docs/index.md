@@ -19,7 +19,7 @@ Declare each flag once, with a schema and a fallback. Prism reads the values fro
 [GitHub](https://github.com/priemskiyyy/prism)
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-react zod
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next zod
 ```
 
 ## Declare once, read by key

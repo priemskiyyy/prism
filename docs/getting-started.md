@@ -19,19 +19,19 @@ Using [Vue](vue.md), [Solid](solid.md), [Svelte](svelte.md) or [React Native](re
 ::: code-group
 
 ```sh [pnpm]
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-memory zod
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-memory@next zod
 ```
 
 ```sh [npm]
-npm install @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-memory zod
+npm install @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-memory@next zod
 ```
 
 ```sh [yarn]
-yarn add @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-memory zod
+yarn add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-memory@next zod
 ```
 
 ```sh [bun]
-bun add @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-memory zod
+bun add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-memory@next zod
 ```
 
 :::

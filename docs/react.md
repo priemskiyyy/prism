@@ -5,7 +5,7 @@ description: "React hooks for Prism: PrismProvider, useFlag and useFlagDetails b
 # React
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-react
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next
 ```
 
 Requires React 18.2 or newer, including React 19. The same package works in [React Native and Expo](react-native.md).

@@ -7,7 +7,7 @@ description: "The memory adapter: flag values from a function of the context, fo
 `@priemskiyyy/prism-memory` answers from a function you write. It needs no network and no account, which makes it the adapter for tests, stories, prototypes and demos.
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-memory
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-memory@next
 ```
 
 ```ts

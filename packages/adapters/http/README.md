@@ -2,6 +2,14 @@
 
 Your own API client as a Prism adapter.
 
+## Installation
+
+The npm preview uses the `next` dist-tag.
+
+```sh
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-http@next
+```
+
 ```ts
 import { http } from "@priemskiyyy/prism-http";
 
