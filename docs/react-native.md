@@ -7,7 +7,7 @@ description: "Feature flags in React Native and Expo with Prism: the React bindi
 React Native uses the React binding, `@priemskiyyy/prism-react`, with no changes. Everything on the [React page](react.md) applies: register, provide, read by key.
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-http zod
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-http@next zod
 ```
 
 ## A complete setup

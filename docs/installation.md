@@ -4,10 +4,15 @@ description: "Every Prism package, what it needs and which versions of React, Vu
 
 # Installation
 
+The initial npm preview includes the core, framework bindings, HTTP and memory
+adapters. Install these packages with `@next`. See the
+[preview package list](https://github.com/priemskiyyy/prism#npm-preview) for the
+current release scope. Other packages described here remain in development.
+
 Prism is split into a dependency-free core, one binding per framework and one adapter per provider. Install the core, the binding for your framework and the adapter for your provider. Your schema library is your choice.
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-react @priemskiyyy/prism-http zod
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-react@next @priemskiyyy/prism-http@next zod
 ```
 
 All packages are ESM only and ship their own type declarations.

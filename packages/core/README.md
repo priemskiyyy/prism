@@ -2,6 +2,14 @@
 
 Typed, reactive feature flags with validated snapshots and an explicit lifecycle.
 
+## Installation
+
+The npm preview uses the `next` dist-tag.
+
+```sh
+pnpm add @priemskiyyy/prism@next zod
+```
+
 ```ts
 import { z } from "zod";
 import { Prism, flag } from "@priemskiyyy/prism";

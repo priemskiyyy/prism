@@ -5,7 +5,7 @@ description: "Vue composables for Prism: PrismProvider, useFlag and useFlagDetai
 # Vue
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-vue
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-vue@next
 ```
 
 Requires Vue 3.5 or newer. Every composable returns a `ComputedRef` and must be called during component setup.

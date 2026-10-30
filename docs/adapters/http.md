@@ -7,7 +7,7 @@ description: "Read feature flags from your own API with @priemskiyyy/prism-http:
 `@priemskiyyy/prism-http` reads flags from an endpoint you own. It is the adapter for flags computed by your backend, and for providers your backend talks to on the client's behalf.
 
 ```sh
-pnpm add @priemskiyyy/prism @priemskiyyy/prism-http
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-http@next
 ```
 
 ```ts

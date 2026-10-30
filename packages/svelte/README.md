@@ -2,6 +2,14 @@
 
 Svelte stores for Prism.
 
+## Installation
+
+The npm preview uses the `next` dist-tag.
+
+```sh
+pnpm add @priemskiyyy/prism@next @priemskiyyy/prism-svelte@next
+```
+
 Register your Prism once, set it on a parent component and read flags by key:
 
 ```ts
